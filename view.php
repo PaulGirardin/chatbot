@@ -18,18 +18,21 @@
 
 	<script type="text/javascript">
 		$(document).ready(function () {
-			$('.question').on('click', function () {
+			var questionClick = $('.question').on('click', function () {
 				$.ajax({
 					method: 'POST',
 					url: "getQuestion.php",
 					data: {idq: $(this).attr('id')},
 					success: function (result) {
-						console.log(result);
-						$('#bot-question').html(result.question);
+						var result = $.parseJSON(result); 
+						$('#bot-question').html(result.question.content);
 						$('#list').html('');
-						// result.subQuestions.each(function() {
 
-						// });
+						if (result.subQuestions[0]) {
+							result.subQuestions.forEach(function(sq) {
+								$('#list').append('<li class="question" id="' + sq.id + '">' + sq.question + '</li>');
+							});
+						}
 					}
 				});
 			});
