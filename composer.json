@@ -1,11 +1,12 @@
 {
   "require": {
     "doctrine/orm": "^2.5",
-    "symfony/yaml": "^3.2"
+    "symfony/yaml": "^3.2",
+    "jms/serializer": "^1.7"
   },
   "autoload": {
     "psr-0": {
-      "": "mappings/"
+      "": "Models/"
     }
   }
 }
