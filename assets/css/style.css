@@ -1,0 +1,127 @@
+body{
+	background: #3D3D3D !important;
+}
+
+p{
+	font-family: 'Roboto'; 
+}
+
+header{
+	background-color: #212121;
+	-moz-box-shadow: 0px 4px 4px 1px #000000;
+	-webkit-box-shadow: 0px 4px 4px 1px #000000;
+	-o-box-shadow: 0px 4px 4px 1px #000000;
+	box-shadow: 0px 4px 4px 1px #000000;
+	filter:progid:DXImageTransform.Microsoft.Shadow(color=#000000, Direction=180, Strength=4);
+	margin-bottom: 25px;
+}
+
+header h1{
+	font-family: 'Roboto';
+	font-size: 30px;
+	color: #FDEC01;
+	margin: 0;
+	padding-top: 10px;
+	padding-bottom: 8px;
+	text-align: center;
+}
+
+/* PAGE ACCUEIL */ 
+
+.intro{
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 50px;
+}
+
+.intro img{
+	width: 20%;
+}
+
+.intro p{
+	color: #fff;
+	width: 60%;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+
+.intro p a{
+	color: #fff;
+	text-decoration: none;
+}
+
+/* FIN PAGE ACCUEIL */
+
+/* PAGE CHAT */ 
+
+.bot{
+	margin-left: 15px;
+	display: block;
+}
+
+.avatar img{
+	width: 10%;
+}
+
+.avatar {
+	position: absolute;
+    top: 88%;
+}
+
+.bulle_chat{
+	background-color: #E9E9E9;
+    border-radius: 20px;
+    padding: 30px 30px;
+    text-align: center;
+    float: left;
+    display: block;
+    max-width: 70%;
+    margin-left: 25px;
+}
+
+.bulle_chat img{
+	width: 20%;
+}
+
+.bulle_rep {
+	display: block;
+	float: left;
+	margin-left: 15px;
+}
+
+.bulle_rep ul{
+	padding-top: 20px;
+    max-width: 100%;
+    padding-left: 0;
+}
+
+.bulle_rep ul li{
+	display: inline-block;
+    background-color: #212121;
+    max-width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 2px;
+}
+
+.bulle_rep ul li a{
+	color: #FDEC01;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.bulle_user{
+	display: block;
+	float: right;
+	margin-right: 15px;
+}
+
+.bulle_user p{
+	color: #FDEC01;
+    background-color: #212121;
+    max-width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* FIN PAGE CHAT */ 

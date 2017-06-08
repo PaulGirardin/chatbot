@@ -14,7 +14,7 @@ Question:
         content:
             type: string
             nullable: false
-            length: 255
+            length: 2000
             options:
                 fixed: false
         question:

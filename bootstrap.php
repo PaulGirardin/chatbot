@@ -9,8 +9,8 @@ require_once 'vendor/autoload.php';
 $dbParams = array(
     'host'     	=> '127.0.0.1',
     'driver'   	=> 'pdo_mysql',
-    'user'     	=> 'root',
-    'password' 	=> '',
+    'user'     	=> 'chatbot',
+    'password' 	=> 'chatbot',
     'dbname'   	=> 'chatbot',
     'charset' 	=> 'utf8'
 );
