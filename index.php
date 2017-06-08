@@ -1,9 +1,14 @@
 <?php
-require_once('Question.php');
 require_once('bootstrap.php');
 
-$entityManager;
+$idq = 1;
 
-$question = new Question();
+if (isset($_GET['idq'])) {
+	$idq = $_GET['idq'];
+}
 
-var_dump($question);
+$questionRepo = $em->getRepository('\Question');
+$question = $questionRepo->find($idq);
+$subQuestions = $questionRepo->findByQuestionOrigine($idq);
+
+require_once('view.php');
